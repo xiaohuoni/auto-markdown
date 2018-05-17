@@ -1,0 +1,179 @@
+{
+    "h1": {
+		"prefix": "md::h1",
+		"body": [
+			"# $1"
+		],
+		"description":"h1 title\n一级标题"
+	},
+	"h2": {
+		"prefix": "md::h2",
+		"body": [
+			"## $1"
+		],
+		"description":"h2 title\n二级标题"
+	},
+	"h3": {
+		"prefix": "md::h3",
+		"body": [
+			"### $1"
+		],
+		"description":"h3 title\n三级标题"
+	},
+	"h4": {
+		"prefix": "md::h4",
+		"body": [
+			"#### $1"
+		],
+		"description":"h4 title (max h6)\n四级标题(最大支持六级标题)"
+	},
+	"p": {
+		"prefix": "md::p",
+		"body": [
+			"\n$1\n"
+		],
+		"description":"p paragraph \n段落"
+	},
+	"cite": {
+		"prefix": "md::cite",
+		"body": [
+			"> $1"
+		],
+		"description":"cite \n引用"
+	},
+	"cite-nesting": {
+		"prefix": "md::cite-nesting",
+		"body": [
+			">> $1"
+		],
+		"description":"nesting cite \n嵌套引用"
+	},
+	"code-js": {
+		"prefix": "md::code-javascript",
+		"body": [
+			"```js",
+			"$1",
+			"```"
+		],
+		"description":"Code Block For JavaScript  \n代码区域-js"
+	},
+	"code-base": {
+		"prefix": "md::code-base",
+		"body": [
+			"```base",
+			"$1",
+			"```"
+		],
+		"description":"Code Block For Base  \n代码区域-base"
+	},
+	"code-html": {
+		"prefix": "md::code-html",
+		"body": [
+			"```html",
+			"$1",
+			"```"
+		],
+		"description":"Code Block For Html  \n代码区域-html"
+	},
+	"code-other": {
+		"prefix": "md::code-other",
+		"body": [
+			"```$1",
+			"$2",
+			"```"
+		],
+		"description":"Code Block For Other \n代码区域,其他区域，自己写上区域标识"
+	},
+	"code-in-line": {
+		"prefix": "md::code-in-line",
+		"body": [
+			"`$1`"
+		],
+		"description":"In Line Code like: this is a code `switch` \n行内标记代码，表示出关键字，或者去掉markdown的关键字。"
+	},
+	"italic": {
+		"prefix": "md::italic",
+		"body": [
+			"*$1*"
+		],
+		"description":"Italic \n斜体"
+	},
+	"bold": {
+		"prefix": "md::bold",
+		"body": [
+			"**$1**"
+		],
+		"description":"bold \n粗体"
+	},
+	"disordered list": {
+		"prefix": "md::list-・",
+		"body": [
+			"- $1"
+		],
+		"description":"Disordered list \n无序列表"
+	},
+	"ordered list": {
+		"prefix": "md::list-⒈",
+		"body": [
+			"1. $1"
+		],
+		"description":"Ordered list \n有序列表"
+	},
+	"line": {
+		"prefix": "md::line",
+		"body": [
+			"*************"
+		],
+		"description":"Segmenting line \n风格线"
+	},
+	"link": {
+		"prefix": "md::link",
+		"body": [
+			"[$1]($2 \"$3\")"
+		],
+		"description":"link \n链接"
+	},
+	"image": {
+		"prefix": "md::image",
+		"body": [
+			"![$1]($2 \"$3\")"
+		],
+		"description":"Image \n图片，比链接多了一个！号"
+	},
+	"copy right": {
+		"prefix": "md::copy-right",
+		"body": [
+			"&copy;"
+		],
+		"description":"copy right© \n版权符号©"
+	},
+	"router": {
+		"prefix": "md::router",
+		"body": [
+			"[$1](#$2)"
+		],
+		"description":"index(router) like <a href=''></a> \n索引，类似a标签的跳转\nuse:\n# api\n[go api](#api)"
+	},
+	"table-explain": {
+		"prefix": "md::table-explain",
+		"body": [
+			"| Name | Age | score |", 
+			"| :- | :-: | -: |",
+			"| Chen | 20| 90 |" ,
+			"| Huang | 18 | 100 |" ,
+			"| Zhang  | 17 | 90 |",
+			"| text-align: left  | center | right |",
+			"| 左对齐  | 居中 | 右对齐 |"
+		],
+		"description":"table explain\n表格说明"
+	},
+	"table": {
+		"prefix": "md::table",
+		"body": [
+			"| $1 | $2 |", 
+			"|  :-  | :-:  |",
+			"| $3 | $4 |" 
+		],
+		"description":"table (Pay attention to ':')\n表格(注意':')"
+	}
+}
