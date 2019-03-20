@@ -129,14 +129,14 @@
 	"link": {
 		"prefix": "md::link",
 		"body": [
-			"[$1]($2 \"$3\")"
+			"[$1]($2)"
 		],
 		"description":"link \n链接"
 	},
 	"image": {
 		"prefix": "md::image",
 		"body": [
-			"![$1]($2 \"$3\")"
+			"![$1]($2)"
 		],
 		"description":"Image \n图片，比链接多了一个！号"
 	},
